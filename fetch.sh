@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git checkout master
+git checkout main
 git fetch upstream
-git merge upstream/master
-git push origin master
+git merge upstream/main
+git push origin main
