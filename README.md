@@ -43,4 +43,5 @@
 * [soleileun](https://alpha-ka-js.github.io/Python/ChoiEunjoung/scrapper/clone-project)
 * [sungwon2054](https://alpha-ka-js.github.io/Python/JeongSungWon/scrapper/clone-project)
 * [oosikk](https://alpha-ka-js.github.io/Python/ys/scrapper/clone-project)
-- [daehyun1023](https://alpha-ka-js.github.io/Python/AhnDaehyun/scrapper/clone-project)
+* [daehyun1023](https://alpha-ka-js.github.io/Python/AhnDaehyun/scrapper/clone-project)
+
