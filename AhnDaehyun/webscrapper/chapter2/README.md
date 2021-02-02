@@ -118,3 +118,20 @@ BeautifulSoup을 이용해서 html text의 내용을 잘 찾아줌
 Step 1. 페이지 가져오기
 Step 2. request 만들기
 Step 3. job 추출하기
+
+## 2.10 ~ 2.16
+
+.string의 값이 None으로 나오면 .get_text()도 한번 해보면 잘 나올수도있음
+
+```
+    pages = soup.find('div', {'class': 's-pagination'}).find_all('a')
+    last_page = pages[-2].get_text(strip=True)
+    print(last_page)
+```
+
+```
+file = open('jobs.csv', 'w', -1,"utf-8", newline="")
+```
+
+file을 write하는데 cp949 인코딩문제로 인해 bufferring을 -1로, encoding을 utf-8로 맞춰주었음  
+또한, writer.writerow를 할때 한 행마다 빈행이 생성되어서 이를 없애주기 위해 newline=''로 설정해주었음
