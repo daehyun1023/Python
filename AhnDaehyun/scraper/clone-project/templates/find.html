@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    a{
+      color: purple;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+  
+    p{
+      font-weight: 600;
+    }
+
+    hr{
+      margin: 40px 0px;
+    }
+    
+    section{
+      width:60%;
+      margin-top: 50px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>Remote Jobs</h1>
+  <h2>{{count}} {{search}} jobs found.</h2>
+  <a href="/export?search={{search}}">Export to CSV</a>
+  <a href="/">← Go back</a>
+  <section>
+    {% for info in db  %}
+      <p>
+        {{info.get('title')}}
+      </p>
+      <p>
+        {{info.get('company')}}
+      </p>
+      <p>
+        <a target="_blank" href="{{info.get('apply_link')}}">Apply</a>
+      </p>
+      <hr>
+    {% endfor %}
+
+  </section>
+
+</body>
+</html>
